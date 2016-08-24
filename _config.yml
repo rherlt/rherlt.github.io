@@ -169,7 +169,7 @@ social:
   - title: "gitlab"
     url: "https://gitlab.com/u/rherlt"
   - title: "rss"
-    url: "{{site.baseurl}}/feed.xml"
+    url: "/feed.xml"
 
 ############
 # 404 page #
