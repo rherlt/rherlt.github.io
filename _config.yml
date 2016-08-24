@@ -28,11 +28,11 @@ force-https: False
 # HTML Head #
 #############
 
-lang: "en"
+lang: "de"
 author: "Rico Herlt"
 title: "//rherlt"
-description: "Blog and website of Rico Herlt, blogging mainly for software development."
-keywords: "rico, herlt, rherlt, c#, csharp, asp.net, dotnet"
+description: "Rico Herlt ist CEO, Dozent, Software Architect, Xamarin und .NET Entwickler aus Berlin. Rico bloggt hauptsächlich über Softwareentwicklung."
+keywords: "rico herlt rherlt C# csharp asp.net dotnet xamarin berlin software architect h3ko"
 favicon: "/img/favicon.ico"
 
 ################
@@ -40,7 +40,8 @@ favicon: "/img/favicon.ico"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-
+greeting: "Hi, Ich bin Rico"
+me-description: "CEO, Dozent, Software Architect, Xamarin and .NET Developer"
 background-img: "../img/intro-bg.jpg"
 
 ##############################
@@ -55,9 +56,16 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
-
+  - text: "Linux is only free if your time has no value."
+  - text: "<strong>Algorithm</strong> <i>(noun.)</i><br>Word used by programmers when they don't want to explain what they did."
+  - text: "<strong>Hardware</strong> <i>(noun.)</i><br>The part of a computer that you can <strong>kick</strong>."
+  - text: "<strong>Programmer</strong> <i>(noun.)</i><br>A person who fixed a problem that you don't know you have, in a way you don't understand."
+  - text: "<i>Why do Java programmers have to wear glasses?</i><br>- Because they don't C#."
+  - text: "<i>How many programmers does it take to change a light bulb?</i><br>- None, that's a hardware problem"
+  - text: "Real programmers count from 0."
+  - text: "A programmer had a problem. He decided to use Java. Now he has a <strong>ProblemFactory</stong>."
+  - text: "If the box says: <i>This software requires Windows XP or better.</i><br> Does that mean it will run on Linux?"
+  
 me-img: "https://www.gravatar.com/avatar/85f5e4fe8d9b790145e6bc8bfa7d774e?s=400"
 
 ##############################
@@ -102,7 +110,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "ricoherlt"
 
 syntax-highlight: True
 
@@ -184,10 +192,10 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
   Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
+  Über mich: 'about'
+#  Timeline: 'timeline'
+  Kontakt: 'contact'
 
 # Exclusion list from the generated _site
 
