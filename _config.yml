@@ -28,10 +28,10 @@ force-https: False
 # HTML Head #
 #############
 
-lang: "en"
+lang: "de"
 author: "Rico Herlt"
 title: "//rherlt"
-description: "Rico Herlt is a CEO, Software Architect, Xamarin and .NET Developer from Berlin, Germany. Rico is blogging mainly for software development."
+description: "Rico Herlt ist CEO, Dozent, Software Architect, Xamarin und .NET Entwickler aus Berlin. Rico bloggt hauptsächlich über Softwareentwicklung."
 keywords: "rico herlt rherlt C# csharp asp.net dotnet xamarin berlin software architect h3ko"
 favicon: "/img/favicon.ico"
 
@@ -40,8 +40,8 @@ favicon: "/img/favicon.ico"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-greeting: "Hi, I am Rico Herlt"
-me-description: "CEO, Software Architect, Xamarin and .NET Developer"
+greeting: "Hi, Ich bin Rico"
+me-description: "CEO, Dozent, Software Architect, Xamarin and .NET Developer"
 background-img: "../img/intro-bg.jpg"
 
 ##############################
@@ -57,7 +57,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Linux is only free if your time has no value."
-  - text: "<strong>Algorithm</strong> <i>(noun.)</i><br>Word used by programmers when they do not want to explain what they did."
+  - text: "<strong>Algorithm</strong> <i>(noun.)</i><br>Word used by programmers when they don't want to explain what they did."
   - text: "<strong>Hardware</strong> <i>(noun.)</i><br>The part of a computer that you can <strong>kick</strong>."
   - text: "<strong>Programmer</strong> <i>(noun.)</i><br>A person who fixed a problem that you don't know you have, in a way you don't understand."
   - text: "<i>Why do Java programmers have to wear glasses?</i><br>- Because they don't C#."
@@ -193,9 +193,9 @@ keybase-in-footer: False
 
 pages_list:
   Blog: 'latest-post'
-  About: 'about'
+  Über mich: 'about'
 #  Timeline: 'timeline'
-  Contact: 'contact'
+  Kontakt: 'contact'
 
 # Exclusion list from the generated _site
 
