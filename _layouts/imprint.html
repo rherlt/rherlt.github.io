@@ -1,0 +1,51 @@
+
+<!-- Imprint Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <section class="container content-section text-center">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+
+          <h1><strong>{{ page.title }}</strong></h1>
+
+          {{ page.content | markdownify }}
+          <p>E-mail: 
+          {% if site.email %}
+            {% if site.email contains '@' %}
+              {% assign newemail = site.email | split: '@' %}
+               <script>
+                  function join_at_email(user, domain){
+                  return (user && domain)?(user + "@" + domain):"";
+                  }
+                  document.write('<a href="mailto:'
+                  + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
+                  + '">'
+                  + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
+                  + '</a>'
+                  );
+                </script>
+            </p>
+        {% else %}
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        {% endif %}
+      {% endif %}
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Imprint Layout End -->

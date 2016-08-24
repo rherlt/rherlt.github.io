@@ -40,7 +40,7 @@ favicon: "/img/favicon.ico"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-greeting: "Hi, I am"
+greeting: "Hi, I am Rico Herlt"
 me-description: "CEO, Software Architect, Xamarin and .NET Developer"
 background-img: "../img/intro-bg.jpg"
 
@@ -61,7 +61,7 @@ lines: # You can add HTML Tags in the Text
   - text: "<strong>Hardware</strong> <i>(noun.)</i><br>The part of a computer that you can <strong>kick</strong>."
   - text: "<strong>Programmer</strong> <i>(noun.)</i><br>A person who fixed a problem that you don't know you have, in a way you don't understand."
   - text: "<i>Why do Java programmers have to wear glasses?</i><br>- Because they don't C#."
-  - text: "<i>How many programmers does it take to change a light bulb?</i><br>- None, that's a hardware problemm"
+  - text: "<i>How many programmers does it take to change a light bulb?</i><br>- None, that's a hardware problem"
   - text: "Real programmers count from 0."
   - text: "A programmer had a problem. He decided to use Java. Now he has a <strong>ProblemFactory</stong>."
   - text: "If the box says: <i>This software requires Windows XP or better.</i><br> Does that mean it will run on Linux?"
@@ -192,11 +192,11 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+  About: 'about'
+#  Timeline: 'timeline'
   Contact: 'contact'
-  Imprint: 'imprint'
+
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
