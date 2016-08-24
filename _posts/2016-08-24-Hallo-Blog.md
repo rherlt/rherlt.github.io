@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Hallo Welt
+title: Hallo Blog
 category: Web
 tags: [ 'html', 'jekyll', 'css', 'github', 'javascript', 'js' ]
 ---
