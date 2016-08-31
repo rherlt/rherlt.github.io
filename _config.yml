@@ -31,7 +31,7 @@ force-https: False
 lang: "de"
 author: "Rico Herlt"
 title: "//rherlt"
-description: "Rico Herlt ist CEO, Dozent, Software Architect, Xamarin und .NET Entwickler aus Berlin. Rico bloggt hauptsächlich über Softwareentwicklung."
+description: "Rico Herlt ist CEO, Consultant, Software Architect, Xamarin und .NET Entwickler aus Berlin. Rico bloggt hauptsächlich über Softwareentwicklung."
 keywords: "rico herlt rherlt C# csharp asp.net dotnet xamarin berlin software architect h3ko"
 favicon: "/img/favicon.ico"
 
