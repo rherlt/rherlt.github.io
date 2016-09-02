@@ -42,7 +42,7 @@ favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
 greeting: "Hi, Ich bin Rico"
 background-img: "../img/intro-bg.jpg"
-me-description: "CEO, Consultant, Software Architect, Xamarin und .NET Developer"
+me-description: "CEO, Consultant, Software Architect, Xamarin und .NET Entwickler"
 
 ##############################
 # Dynamic Text on the Header #
