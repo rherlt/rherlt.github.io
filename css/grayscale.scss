@@ -104,6 +104,11 @@ a {
             outline: none;
         }
     }
+    .navbar-icon{
+        height: 17px;
+        margin-right: -8px;
+        margin-bottom: 3px;
+    }
     a {
         color: $navbar-color;
         @if $header-text-shadow{

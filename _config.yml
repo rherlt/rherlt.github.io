@@ -33,15 +33,16 @@ author: "Rico Herlt"
 title: "//rherlt"
 description: "Rico Herlt ist CEO, Consultant, Software Architect, Xamarin und .NET Entwickler aus Berlin. Rico bloggt hauptsächlich über Softwareentwicklung."
 keywords: "rico herlt rherlt C# csharp asp.net dotnet xamarin berlin software architect h3ko"
-favicon: "/img/favicon.ico"
+#favicon is statically referenced in _includes/head.html
+#favicon: "/img/fehnsehturm-favicon.ico"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/tvtower-w.png"
 greeting: "Hi, Ich bin Rico"
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/berlin-bg.jpeg"
 me-description: "CEO, Consultant, Software Architect, Xamarin und .NET Entwickler"
 
 ##############################
