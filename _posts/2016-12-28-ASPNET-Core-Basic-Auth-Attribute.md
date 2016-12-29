@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Basic Authentication mit ASP.NET Core MVC
+title: Basic Auth mit ASP.NET Core MVC
 category: C#
 tags: [ 'ASP.NET', 'Basic Authentication', '.NET CORE', 'REST', 'Attribute', 'C#', 'Azure', 'MVC']
 ---
