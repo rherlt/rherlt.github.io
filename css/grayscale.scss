@@ -49,11 +49,9 @@ h4 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
     line-height: 1.5;
     @media(min-width:768px) {
-        margin: 0 0 35px;
-        font-size: 20px;
+        margin: 0 0 35px;        
         line-height: 1.6;
     }
 }
@@ -190,6 +188,9 @@ a {
         .intro-text-spacing {
             min-height: 160px;
         }
+        p{
+            font-size: 20px;
+        }
     }
     @media(min-width:768px) {
         height: 100%;
@@ -239,8 +240,14 @@ a {
     }
 }
 
-.content-section {
-    padding-top: 100px;
+
+#latest-post p {
+    text-align: left;
+}  
+    
+
+.content-section {    
+        padding-top: 100px;
     @media(min-width:767px) {        
         padding-top: 125px;
     }
@@ -255,14 +262,13 @@ a {
     /* Added in { Personal } */
     ul,
     ol {
-        text-align: center;
+        text-align: left;
         margin: 0 0 25px;
-        font-size: 18px;
         line-height: 1.5;
         list-style-position: inside;
     }
     pre {
-      padding: 0;
+      padding: 0.5em;
       > code {
         text-align: left;
       }
@@ -276,6 +282,10 @@ a {
 
     /* Added in { Personal } */
     &#post {
+        p {
+            text-align: left;
+        }
+
         div.author img {
             border: 0px;
             margin-bottom: 20px;

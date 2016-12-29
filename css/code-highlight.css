@@ -1,0 +1,69 @@
+/* Code Stylings */
+
+.highlight {
+    overflow-x: scroll;
+    padding: 0.5em;
+    text-align: left;
+    background-color: #0E1E1E;
+    word-break: keep-all;
+    word-wrap: unset;
+    white-space: nowrap;
+}
+
+.hljs-keyword,
+.hljs-literal{ /*special literal: “true”, “false” and “null”*/
+    color: #569CD6;
+}
+
+.hljs-number{
+    color: #B5CEA8;    
+}
+
+.hljs-attribute,
+.hljs-class{
+    color: #4EC9B0;
+}
+
+.hljs-subset,
+.hljs-preprocessor,
+.hljs-built_in, /*built-in objects and functions (“window”, “console”, “require”, etc...)*/
+.hljs-title, /*name of a function inside a header*/
+.hljs-params, /*parentheses and everything inside them in a function’s header*/
+.hljs-pi, /*‘use strict’ processing instruction*/
+.hljs-function{  
+    color: white;
+}
+
+.hljs-string{
+    color: #D69D85;    
+}
+
+.hljs-regexp{
+    color: #9A5334;
+}
+
+.hljs-keyword{
+    color: #569CD6;
+}
+
+.hljs-comment,
+.hljs-xmlDocTag{
+    color: #57A64A;
+}
+
+.hljs {
+    background-color: #0E1E1E;
+    color: white;
+}
+
+.hljs-line-numbers {
+    text-align: right;
+    border-right: 1px solid #ccc;
+    color: #999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

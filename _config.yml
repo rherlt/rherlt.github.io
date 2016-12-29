@@ -66,6 +66,7 @@ lines: # You can add HTML Tags in the Text
   - text: "<i>Why do Java programmers have to wear glasses?</i><br>- Because they don't C#."
   - text: "<i>How many programmers does it take to change a light bulb?</i><br>- None, that's a hardware problem."
   - text: "Real programmers count from 0."
+  - text: "There is no cloud ☁.<br>- It's just someone else's computer."
   - text: "A programmer had a problem. He decided to use Java. Now he has a <strong>ProblemFactory</stong>."
   - text: "If the box says: <i>This software requires Windows XP or better.</i><br> Does that mean it will run on Linux?"
   
