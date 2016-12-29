@@ -18,7 +18,7 @@ Trotzdem aller Nachteile der Basic Authentication gegenüber neuerer Technologie
 
 Aus diesen Gründen möchte ich zeigen, wie einfach man ein eigenes C#-[Attribute](https://msdn.microsoft.com/en-us/library/system.attribute(v=vs.110).aspx) implementieren kann, dass ähnlich wie das [AuthorizeAttribute](https://msdn.microsoft.com/en-us/library/system.web.mvc.authorizeattribute(v=vs.118).aspx) von ASP.NET MVC funktioniert.
 
-## Aufbau eines HTTP Requests
+### Aufbau eines HTTP Requests
 Um die Basis dafür zu schaffen, schauen wir uns zuerst den Aufbau eines beliebigen HTTP-Requests mit Basic Authentifizierung an:
 
 <script src="https://gist.github.com/rherlt/2f43632666823e00d8c0f220e55f521e.js"></script>
@@ -29,7 +29,7 @@ In diesem HTTP-Request finden wir den [Authorization HTTP Header](https://de.wik
 
 Wie zu erkennen ist, sind Benutzername und Kennwortt getrennt durch einen Doppelpukt aneinander gereiht und in ergeben als Base64 kodierte Zeichenkette den Basic Token für die Authentifizierung.
 
-## Statische Authentifizierung
+### Statische Authentifizierung
 
 Die Authentifizierung mit statischen  Zugangsdaten funktioniert ganz einfach, allerdings bietet sie nicht viel Spielraum, denn die Zugangsdaten sind hart in den Quellcode integriert. 
 
@@ -44,7 +44,7 @@ Dabei erhalte ich folgende Antwort vom Server:
 <script src="https://gist.github.com/rherlt/8bf2d263c3a289274c96a896c13458f4.js"></script>
 
 Wie man sieht, war ich authorisiert meine Anfrage an die REST API durchzuführen. Der erkannte Benutzername lautet _someone@example.com_.
-## UserManager Authentifizierung
+### UserManager Authentifizierung
 Da die statische Authentifizierung oft nicht flexibel genug ist, sondern wir häufig den Anwendungsfall haben, dass wir unserer Benutzer mit dem [IdentityFramework](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity) verwalten, habe ich das Programm dahingehend erweitert. Im folgenden Beispiel sieht man nun, wie die _Get()_-Methode mit dem [UserManagerBasicAuthenticationAttribute](https://github.com/rherlt/Blog-NetCoreBasicAuth/blob/master/src/com.rherlt.NetCoreBasicAuth/BasicAuthentication/UserManagerBasicAuthenticationAttribute.cs) bestückt ist. Als Parameter bekommt dieses Attribut noch den Typen unseres IdentityUsers übergeben. Dieser Typ besagt, mit welcher konkreten Model-Klasse wir mit dem IdentityFramework arbeiten möchten. Sofern man das generierte Projekt-Template vom Visual Studio verwendet und nichts anpasst, wird standardmäßig die Klasse [ApplicationUser](https://github.com/rherlt/Blog-NetCoreBasicAuth/blob/master/src/com.rherlt.NetCoreBasicAuth.WebApplication/Models/ApplicationUser.cs) für diesen Zweck generiert. Die Besonderheit dieser Klasse besteht darin, dass sie von [IdentityUser](https://msdn.microsoft.com/en-us/library/dn613256(v=vs.108).aspx) erbt.
 
 <script src="https://gist.github.com/rherlt/e84d2ca93955c20ed1306e884012c103.js"></script>
@@ -57,10 +57,10 @@ Der Server antwortet wie erwartet, die Authentifizierung gegen das IdentityFrame
 
 <script src="https://gist.github.com/rherlt/c0d1945a06a1710e93abaf87a0f97595.js"></script>
 
-## Was passiert unter der Haube?
+### Was passiert unter der Haube?
 Sowohl das [BasicAuthenticationAttribute](https://github.com/rherlt/Blog-NetCoreBasicAuth/blob/master/src/com.rherlt.NetCoreBasicAuth/BasicAuthentication/BasicAuthenticationAttribute.cs) als auch das [UserManagerBasicAuthenticationAttribute](https://github.com/rherlt/Blog-NetCoreBasicAuth/blob/master/src/com.rherlt.NetCoreBasicAuth/BasicAuthentication/UserManagerBasicAuthenticationAttribute.cs) erben beide von der Basisklasse [BasicAuthenticationBaseAttribute](https://github.com/rherlt/Blog-NetCoreBasicAuth/blob/master/src/com.rherlt.NetCoreBasicAuth/BasicAuthentication/BasicAuthenticationBaseAttribute.cs). Diese Klasse wiederum erbt von [ActionFilterAttribute](https://msdn.microsoft.com/de-de/library/system.web.mvc.actionfilterattribute(v=vs.118).aspx) was dafür sorgt, dass jede für Action die auf einem Contorller ausgeführt wird, zuvor die Methode _OnActionExecuting()_ aufgerufen wird. In dieser Methode führen wir für jeden HTTP Request eine Basic Authentifizierung durch und prüfen, ob die im HTTP Header bereitgstellten Zugangsdaten valide sind. Für den Fall das sie nicht valide sind, wird ein entsprechender HTTP Response generiert. Für die Fall, dass es sich um valide Zugangsdaten handelt, wird der aktuelle Benutzerkontext gesetz und vorerst kein HTTP Repsonse generiert, da anschließend vom MVC Framework die Methode des entsprechenden Controllers aufgerufen wird.
 
-## Fazit
+### Fazit
 Wie bereits erwähnt, ist es in dem meisten Fällen nicht empfehlenswert Basic Authentication zu verwenden. Wenn man jedoch aus einem der besagten Gründe daruf angewiesen ist, ist es trotzdem möglich ASP.NET Core MVC WebApi zusammen mit Basic Authentication zu verwenden.
 
 Der gesamte Quellcode dieses Blogeintrags inklusive steht auf Github bereit: [https://github.com/rherlt/Blog-NetCoreBasicAuth](https://github.com/rherlt/Blog-NetCoreBasicAuth)
