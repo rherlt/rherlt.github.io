@@ -60,7 +60,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Linux is only free if your time has no value."
   - text: "<strong>Algorithm</strong> <i>(noun.)</i><br>Word used by programmers when they don't want to explain what they did."
   - text: "<strong>Hardware</strong> <i>(noun.)</i><br>The part of a computer that you can <strong>kick</strong>."
-  - text: "<strong>Programmer</strong> <i>(noun.)</i><br>A person who soves a problem that you didn't know you have, in a way you don't understand.<br>See also <strong>Wizard</strong>, <strong>Magician.</strong>"
+  - text: "<strong>Programmer</strong> <i>(noun.)</i><br>A person who solves a problem that you didn't know you have, in a way you don't understand.<br>See also <strong>Wizard</strong>, <strong>Magician.</strong>"
   - text: "<strong>Consultant</strong> <i>(noun.)</i><br>A person who does precision guess work based on unreliable data provided by those of questionable knowlage.<br>See also <strong>Magician</strong>, <strong>Miracle Worker.</strong>"
   - text: "<strong>Project Manager</strong> <i>(noun.)</i><br>A person who thinks 9 women can deliver a baby in 1 month."
   - text: "<i>Why do Java programmers have to wear glasses?</i><br>- Because they don't C#."
