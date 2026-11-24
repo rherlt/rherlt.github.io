@@ -120,3 +120,11 @@ if (impressumToggle && impressum) {
         }
     });
 }
+
+/* ---------- Copyright-Jahr: immer aktuelles Jahr ---------- */
+var yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ---------- Erfahrungsjahre: aktuelles Jahr - 2010 ---------- */
+var yearsEl = document.getElementById('years-exp');
+if (yearsEl) yearsEl.textContent = new Date().getFullYear() - 2010;
