@@ -100,3 +100,23 @@ var io = new IntersectionObserver(function (entries) {
 }, { threshold: 0.12 });
 
 revealTargets.forEach(function (el) { io.observe(el); });
+
+/* ---------- Impressum: Footer ausklappen ---------- */
+var impressumToggle = document.getElementById('impressumToggle');
+var impressum = document.getElementById('impressum');
+if (impressumToggle && impressum) {
+    impressumToggle.addEventListener('click', function () {
+        var open = impressum.classList.toggle('open');
+        impressumToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
+            var scrolled = false;
+            var scrollToBottom = function () {
+                if (scrolled || !impressum.classList.contains('open')) return;
+                scrolled = true;
+                window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+            };
+            impressum.addEventListener('transitionend', scrollToBottom);
+            setTimeout(scrollToBottom, 500);
+        }
+    });
+}
