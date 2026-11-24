@@ -1,9 +1,358 @@
----
-layout: index
-section-type: index
-sitemap:
-  priority: 1.0
----
-<!--
-If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
--->
+<!DOCTYPE html>
+<html lang="de">
+
+<!-- HEAD -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Rico Herlt — Software-Consultant, Software-Architekt, Cloud & .NET/.NET MAUI Entwickler aus Berlin. Online-Visitenkarte.">
+  <meta name="author" content="Rico Herlt">
+  <meta name="keywords"
+    content="rico herlt, rherlt, C#, .NET, .NET MAUI, Xamarin, Cloud, DevOps, Kubernetes, Keycloak, Berlin, Software Architect, Consultant, 2cld, CloudKultur">
+  <title>//rherlt — Rico Herlt</title>
+
+  <link rel="icon" href="assets/tvtower.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#00cdff">
+
+  <!-- Fonts (Lora + Montserrat) und Icons (Font Awesome) — lokal aus fonts/ geladen -->
+  <link rel="stylesheet" href="fonts/fontawesome.min.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-top">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+         <a class="brand" href="#home">
+           <img class="brand-tower" src="assets/tvtower.svg" alt="Berlin TV Tower" aria-hidden="true">
+           <span class="brand-text">//rherlt</span>
+       </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="page-scroll">Über mich</a></li>
+        <li><a href="#skills" class="page-scroll">Kompetenzen</a></li>
+        <li><a href="#experience" class="page-scroll">Werdegang</a></li>
+        <li><a href="#projects" class="page-scroll">Projekte</a></li>
+        <li><a href="#contact" class="page-scroll">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <h1 class="brand-heading">Hi, ich bin <span class="accent">Rico</span></h1>
+      <p class="typed" id="typed"></p>
+      <a class="avatar-link" href="#about">
+        <img class="avatar" src="https://www.gravatar.com/avatar/85f5e4fe8d9b790145e6bc8bfa7d774e?s=400&d=mp"
+          alt="Rico Herlt" loading="lazy">
+      </a>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i> Berlin</span>
+        <span><i class="fa-solid fa-briefcase"></i> 12+ Jahre Erfahrung</span>
+        <span><i class="fa-solid fa-user-graduate"></i> M. Sc.</span>
+      </div>
+      <a href="#about" class="page-scroll scroll-cue"><i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+  </header>
+
+  <!-- ÜBER MICH -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span>Über mich</span></h2>
+      <p class="section-lead">Als Software-Consultant und -Entwickler begleite ich Unternehmen bei der digitalen
+        Transformation. Meine Schwerpunkte liegen in der Cross-Plattform-Entwicklung, der Cloud- und 
+        Webservice-Integration, der KI-Forschung, der Unterstützung der Lehre sowie meiner Tätigkeit als 
+        IHK-Ausbilder und -Prüfer.</p>
+
+      <div class="facts">
+        <div class="fact">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h3>Abschluss</h3>
+            <p>Master of Science, Angewandte Informatik (HTW Berlin, Vertiefung Mobile Computing)</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-language"></i>
+          <div>
+            <h3>Sprachen</h3>
+            <p>Deutsch (Muttersprache) · Englisch C1 · Französisch A2</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-compass"></i>
+          <div>
+            <h3>Interessen</h3>
+            <p>Internet of Things · Holographic Computing (HoloLens) · Cloud Computing · Smart Home</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <h3>Zertifizierungen</h3>
+            <p>Microsoft Certified Professional: UWP, Web Applications, Azure, ASP.NET MVC, C#</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOMPETENZEN -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span>Kernkompetenzen</span></h2>
+
+      <div class="skill-groups">
+        <div class="skill-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Programmiersprachen</h3>
+          <div class="tags">
+            <span>C#</span><span>Go</span><span>Java</span><span>TypeScript</span>
+            <span>Python</span><span>Swift</span><span>Kotlin</span><span>Dart</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud &amp; Infrastruktur</h3>
+          <div class="tags">
+            <span>Docker</span><span>Kubernetes</span><span>OpenShift</span><span>Terraform</span>
+            <span>Helm</span><span>DigitalOcean</span><span>Azure</span><span>GCP</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-server"></i>
+          <h3>Web &amp; Backend</h3>
+          <div class="tags">
+            <span>ASP.NET</span><span>.NET 5–9</span><span>Blazor</span><span>Spring Boot</span>
+            <span>REST</span><span>SOAP</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Mobile</h3>
+          <div class="tags">
+            <span>.NET MAUI</span><span>Xamarin</span><span>Flutter</span><span>iOS</span><span>Android</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Sicherheit &amp; IAM</h3>
+          <div class="tags">
+            <span>Keycloak</span><span>OAuth 2.0</span><span>OpenID Connect</span>
+            <span>Permify</span><span>BSI / DSGVO</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Datenbanken</h3>
+          <div class="tags">
+            <span>SQL Server</span><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>Oracle</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Werkzeuge</h3>
+      <div class="tags big">
+        <span>Git</span><span>VS Code</span><span>Rider</span><span>JetBrains IDEA</span>
+        <span>Goland</span><span>Visual Studio</span><span>Jira</span><span>Confluence</span>
+        <span>Postman</span><span>Swagger</span><span>Enterprise Architect</span><span>SonarQube</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WERDEGANG -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span>Beruflicher Werdegang</span></h2>
+
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">10/2019 – heute</span>
+            <h3>Geschäftsführer</h3>
+            <p class="t-org">CloudKultur GmbH</p>
+            <p>SaaS-Plattformen, Cloud-Consulting und Architektur von verteilten Anwendungen.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">09/2018 – heute</span>
+            <h3>Geschäftsführer · Consultant &amp; Developer</h3>
+            <p class="t-org">2cld GmbH</p>
+            <p>Software-Consulting, -Entwicklung und Cloud-Services.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">01/2018 – 08/2018</span>
+            <h3>Freiberuflicher Consultant &amp; Developer</h3>
+            <p class="t-org">Selbstständig</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">Seit 2014</span>
+            <h3>IHK-Prüfungsausschussmitglied</h3>
+            <p class="t-org">Ausbildungsprüfung Fachinformatik – Anwendungsentwicklung</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">Seit 2013</span>
+            <h3>Ausbilder (IHK)</h3>
+            <p class="t-org">Fachinformatik – Anwendungsentwicklung</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="t-period">2012 – 2017</span>
+            <h3>Geschäftsführer · Softwareentwickler</h3>
+            <p class="t-org">h3ko GmbH</p>
+            <p>Entwicklung verteilter Anwendungen.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Ausbildung &amp; Weiterbildung</h3>
+      <div class="edu-grid">
+        <div class="edu">
+          <span class="edu-period">2013 – 2017</span>
+          <h3>Master of Science</h3>
+          <p>Angewandte Informatik, Vertiefung Mobile Computing · Hochschule für Technik und Wirtschaft Berlin</p>
+        </div>
+        <div class="edu">
+          <span class="edu-period">2012 – 2013</span>
+          <h3>Auslandssemester</h3>
+          <p>Informatik · California State University Long Beach, USA</p>
+        </div>
+        <div class="edu">
+          <span class="edu-period">2010 – 2013</span>
+          <h3>Bachelor of Science</h3>
+          <p>Applied Computer Science, Network Computing · Fachhochschule Brandenburg</p>
+        </div>
+        <div class="edu">
+          <span class="edu-period">2007 – 2010</span>
+          <h3>Ausbildung</h3>
+          <p>Fachinformatiker für Anwendungsentwicklung · Buchholz Software, Tangermünde</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEKTE -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span>Leistungsspektrum</span></h2>
+      <p class="section-lead">Über mehr als ein Jahrzehnt habe ich in zahlreichen Projekten
+        eine breite Technologievielfalt und unterschiedlichste Themengebiete erlebt —
+        von der Konzeption bis in den Produktivbetrieb.</p>
+
+      <div class="project-grid">
+        <article class="project">
+          <h3>Mobile &amp; Cross-Plattform</h3>
+          <p>Plattformübergreifende iOS- und Android-Anwendungen — von der nativen
+            Entwicklung bis hin zu modernen Frameworks. Geteilte Geschäftslogik,
+            Offline-Fähigkeit und Anbindung an Backends und Web-Services.</p>
+          <div class="tags">
+            <span>.NET MAUI</span><span>Flutter</span><span>Native</span><span>MVVM</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Planung und Aufbau skalierbarer Cloud-Infrastruktur: containerbasierte
+            Microservices-Plattformen, automatisierte CI/CD-Pipelines und
+            Infrastructure-as-Code — revisionssicher und produktionsreif.</p>
+          <div class="tags">
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Sicherheit &amp; Identität</h3>
+          <p>Entwicklung sicherer, normgerechter Authentifizierungs- und
+            Berechtigungsmechanismen nach aktuellen Standards. Feingranulare
+            Zugriffskontrollen und schutzrelevante Verfahren in sensiblen Domänen.</p>
+          <div class="tags">
+            <span>OAuth 2.0</span><span>OpenID Connect</span><span>IAM</span><span>Sicherheit</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Verbund- &amp; Embedded-Systeme</h3>
+          <p>Digitale Vernetzung von Geräten und Sachverhalten: vernetzte
+            Anwendungen, Echtzeitdaten und intelligente Endgeräte, die
+            physische Prozesse mit digitalen Diensten verbinden.</p>
+          <div class="tags">
+            <span>IoT</span><span>Echtzeit</span><span>Geräte</span><span>Sensordaten</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub-title">Hierdurch gefestigte Kernkompetenzen</h3>
+      <div class="tags big">
+        <span>Softwarearchitektur</span><span>Distributed Systems</span>
+        <span>Cloud-Consulting</span><span>Microservices</span>
+        <span>Sicherheitskonzepte</span><span>Agile Prozesse</span>
+        <span>Leitung &amp; Beratung</span><span>Cross-Plattform-Entwicklung</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span>Kontakt</span></h2>
+      <p class="section-lead">Gerne eine Nachricht — oder finden Sie mich auf den sozialen Netzwerken.</p>
+
+      
+
+      <ul class="social">
+        <li><a href="https://2cld.de" target="_blank" rel="noopener" aria-label="2cld.de"><i
+              class="fa-solid fa-building"></i></a></li>
+        <li><a href="https://www.xing.com/profile/Rico_Herlt" target="_blank" rel="noopener" aria-label="XING"><i
+              class="fa-brands fa-xing"></i></a></li>
+        <li><a href="https://de.linkedin.com/in/ricoherlt" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://twitter.com/rherlt" target="_blank" rel="noopener" aria-label="Twitter"><i
+              class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://stackoverflow.com/users/6435375/rherlt" target="_blank" rel="noopener"
+            aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a></li>
+        <li><a href="https://github.com/rherlt" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://gitlab.com/u/rherlt" target="_blank" rel="noopener" aria-label="GitLab"><i
+              class="fa-brands fa-gitlab"></i></a></li>
+        <li><a href="https://bitbucket.org/rherlt/" target="_blank" rel="noopener" aria-label="Bitbucket"><i
+              class="fa-brands fa-bitbucket"></i></a></li>
+        <li><a href="mailto:mail@ricoherlt.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+       <a class="brand brand-sm" href="#home">
+         <img class="brand-tower" src="assets/tvtower.svg" alt="Berlin TV Tower" aria-hidden="true">
+         <span class="brand-text">//rherlt</span>
+       </a>
+      <p>Copyright &copy; Rico Herlt 2026 · <a href="#home">Nach oben</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
