@@ -28,7 +28,7 @@ navLinks.addEventListener('click', function (e) {
 /* ---------- Typing-Animation (Builder / typed.js-Effekt der Original-Seite) ---------- */
 /* Gleiche Zitate wie in /js/typed.min.js der Ursprungsseite */
 var quotes = [
-   "Consultant, Software Architect, Cloud-Entwickler aus Berlin",
+   "Consultant, Software Architect, Cloud-Entwickler aus Berlin und Brandenburg a.d.H.",
    "Ich erstelle Cross-Plattform Apps",
    "Cloud, DevOps &amp; Kubernetes — von der Konzeption bis in Produktion",
    "Security first: BSI-/DSGVO-konforme Identitäts- &amp; Zugangssysteme (IAM)",
